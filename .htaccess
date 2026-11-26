@@ -1,0 +1,55 @@
+# ضغط الملفات
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json
+    AddOutputFilterByType DEFLATE image/svg+xml application/xhtml+xml application/xml
+</IfModule>
+
+# تخزين مؤقت للملفات الثابتة
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/html "access plus 1 day"
+</IfModule>
+
+# إعادة توجيه صفحة 404
+ErrorDocument 404 /404.html
+
+# حماية الملفات الحساسة
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# منع تصفح المجلدات
+Options -Indexes
+
+# الفهرس الافتراضي للمجلدات
+DirectoryIndex index.html
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # دومين واحد فقط: https بدون www
+    RewriteCond %{HTTPS} off [OR]
+    RewriteCond %{HTTP_HOST} ^www\. [NC]
+    RewriteRule ^(.*)$ https://estolalkhpra.com/$1 [R=301,L]
+
+    # إزالة index.html من الروابط (/x/index.html -> /x/)
+    RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html[\s?] [NC]
+    RewriteRule ^(.*/)?index\.html$ /$1 [R=301,L,NC]
+
+    # تحويل الروابط القديمة .html إلى الروابط النظيفة الجديدة
+    RewriteRule ^(about|services|blog|gallery|faq|contact|privacy-policy|terms-and-conditions|sitemap)\.html$ /$1/ [R=301,L,NC]
+    RewriteRule ^(services|blog)/([a-z0-9-]+)\.html$ /$1/$2/ [R=301,L,NC]
+</IfModule>
+
+# تحسين الأداء
+<IfModule mod_headers.c>
+    <FilesMatch "\.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2)$">
+        Header set Cache-Control "max-age=31536000, public"
+    </FilesMatch>
+</IfModule>

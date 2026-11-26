@@ -1,0 +1,18 @@
+{
+    "name": "أسطول الخبراء لخدمات التكييف",
+    "short_name": "أسطول الخبراء",
+    "description": "خدمات تركيب وصيانة وتنظيف المكيفات في الرياض",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#1a5276",
+    "theme_color": "#1565C0",
+    "lang": "ar",
+    "dir": "rtl",
+    "icons": [
+        {
+            "src": "/images/logo/logo-main.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ]
+}
