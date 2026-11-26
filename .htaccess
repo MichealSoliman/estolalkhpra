@@ -42,6 +42,10 @@ DirectoryIndex index.html
     RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html[\s?] [NC]
     RewriteRule ^(.*/)?index\.html$ /$1 [R=301,L,NC]
 
+    # صفحات تم دمجها
+    RewriteRule ^services/dismantling(/|\.html)?$ /services/install-and-dismantle/ [R=301,L,NC]
+    RewriteRule ^services/(indoor|outdoor)-unit-cleaning(/|\.html)?$ /services/washing/ [R=301,L,NC]
+
     # تحويل الروابط القديمة .html إلى الروابط النظيفة الجديدة
     RewriteRule ^(about|services|blog|gallery|faq|contact|privacy-policy|terms-and-conditions|sitemap)\.html$ /$1/ [R=301,L,NC]
     RewriteRule ^(services|blog)/([a-z0-9-]+)\.html$ /$1/$2/ [R=301,L,NC]
