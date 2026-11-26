@@ -53,8 +53,10 @@
     <link rel="stylesheet" href="/css/responsive.css">
     <link rel="stylesheet" href="/css/animations.css">
     <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/faq.css">
 
     <!-- Schema.org -->
+    <link rel="stylesheet" href="/css/seo-content.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -113,6 +115,70 @@
   }
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ما هي أفضل شركة مكيفات بالرياض؟",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "أفضل شركة هي التي تشخص المشكلة بدقة قبل الإصلاح، وتعطيك سعرًا واضحًا قبل البدء، وتقدم ضمانًا مكتوبًا. في أسطول الخبراء نطبق هذه المعايير في كل زيارة، ونخدم جميع أحياء الرياض على مدار 24 ساعة."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ما الخدمات التي تقدمونها للمكيفات؟",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "نقدم صيانة المكيفات، وتصليح الأعطال، وتركيب المكيفات، وفك وتركيب ونقل المكيفات، وغسيل وتنظيف وتعقيم المكيفات، وشحن الفريون، وتمديد مواسير النحاس، وتركيب القواعد، وعقود الصيانة الدورية، لجميع الأنواع والماركات."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "هل تصلحون جميع أنواع المكيفات؟",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "نعم، نتعامل مع المكيفات السبليت والشباك والمركزي والدكت (الكونسيلد) والكاسيت والدولابي، ومع جميع الماركات مثل زامل وجري وإل جي وسامسونج وميديا وكاريير وغيرها."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "كم سعر صيانة المكيف في الرياض؟",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "الصيانة الشاملة مع الغسيل للمكيف السبليت تبدأ من 150 ريال، والسعر النهائي يحدده الفني بعد الكشف ويتم الاتفاق عليه قبل بدء العمل. يوجد خصم عند صيانة أكثر من مكيف."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "هل الخدمة متاحة 24 ساعة؟",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "نعم، نستقبل الطلبات والأعطال الطارئة على مدار 24 ساعة طوال أيام الأسبوع عبر الاتصال أو واتساب على الرقم 0547559437."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "هل تقدمون ضمانًا على الشغل؟",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "نعم، نقدم ضمانًا مكتوبًا على أعمال الصيانة والتركيب وقطع الغيار، وتختلف مدته حسب نوع الخدمة ويتم توضيحها قبل التنفيذ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ما المناطق التي تغطونها في الرياض؟",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "نغطي جميع أحياء الرياض في الشمال والشرق والغرب والجنوب والوسط، مثل الملقا والنرجس والياسمين والروضة والنسيم والسويدي والشفا والعليا والملز وغيرها."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <!-- الشريط العلوي -->
@@ -155,12 +221,15 @@
         <li>
             <a href="/services/" class="">خدماتنا <i class="fas fa-chevron-down"></i></a>
             <ul class="dropdown">
-                <li><a href="/services/installation/">تركيب المكيفات</a></li>
-                <li><a href="/services/maintenance/">صيانة المكيفات</a></li>
-                <li><a href="/services/cleaning/">تنظيف المكيفات</a></li>
-                <li><a href="/services/repair/">إصلاح الأعطال</a></li>
+                <li><a href="/services/maintenance/">صيانة مكيفات</a></li>
+                <li><a href="/services/install-and-dismantle/">فك وتركيب مكيفات</a></li>
+                <li><a href="/services/installation/">تركيب مكيفات</a></li>
+                <li><a href="/services/washing/">غسيل مكيفات</a></li>
+                <li><a href="/services/cleaning/">تنظيف وتعقيم المكيفات</a></li>
+                <li><a href="/services/freon-refill/">شحن فريون</a></li>
+                <li><a href="/services/repair/">تصليح المكيفات</a></li>
                 <li><a href="/services/relocation/">نقل المكيفات</a></li>
-                <li><a href="/services/freon-refill/">تعبئة الفريون</a></li>
+                <li><a href="/services/"><strong>كل الخدمات</strong></a></li>
             </ul>
         </li>
         <li><a href="/about/" class="">من نحن</a></li>
@@ -181,7 +250,7 @@
     <!-- القسم الرئيسي Hero -->
     <section class="hero hero-home">
         <div class="hero-bg">
-            <img src="/images/hero/hero-main.jpg" alt="فني تكييف محترف يقدم خدمات الصيانة" loading="eager">
+            <img src="/images/hero/hero-main.jpg" alt="فني مكيفات بالرياض من أسطول الخبراء" width="1344" height="768" loading="eager" fetchpriority="high">
         </div>
         <div class="hero-overlay"></div>
         <div class="container">
@@ -269,7 +338,7 @@
                     <i class="fas fa-cogs"></i>
                     خدماتنا
                 </div>
-                <h2 class="section-title">خدمات <span>التكييف</span> الشاملة</h2>
+                <h2 class="section-title">خدمات <span>المكيفات بالرياض</span></h2>
                 <p class="section-description">
                     نقدم مجموعة كاملة من خدمات التكييف لتلبية جميع احتياجاتك
                 </p>
@@ -277,7 +346,7 @@
             <div class="services-grid">
                 <div class="service-card reveal">
                     <div class="service-image">
-                        <img src="/images/services/installation.jpg" alt="تركيب المكيفات" loading="lazy">
+                        <img src="/images/services/installation.jpg" alt="تركيب المكيفات" width="1184" height="864" loading="lazy">
                         <span class="service-badge">الأكثر طلباً</span>
                     </div>
                     <div class="service-content">
@@ -290,7 +359,7 @@
                 </div>
                 <div class="service-card reveal delay-1">
                     <div class="service-image">
-                        <img src="/images/services/maintenance.jpg" alt="صيانة المكيفات" loading="lazy">
+                        <img src="/images/services/maintenance.jpg" alt="صيانة المكيفات" width="1184" height="864" loading="lazy">
                     </div>
                     <div class="service-content">
                         <h3>صيانة المكيفات</h3>
@@ -302,7 +371,7 @@
                 </div>
                 <div class="service-card reveal delay-2">
                     <div class="service-image">
-                        <img src="/images/services/cleaning.jpg" alt="تنظيف المكيفات" loading="lazy">
+                        <img src="/images/services/cleaning.jpg" alt="تنظيف المكيفات" width="1184" height="864" loading="lazy">
                         <span class="service-badge">جديد</span>
                     </div>
                     <div class="service-content">
@@ -315,10 +384,10 @@
                 </div>
                 <div class="service-card reveal">
                     <div class="service-image">
-                        <img src="/images/services/maintenance.jpg" alt="إصلاح أعطال المكيفات" loading="lazy">
+                        <img src="/images/services/maintenance.jpg" alt="إصلاح أعطال المكيفات" width="1184" height="864" loading="lazy">
                     </div>
                     <div class="service-content">
-                        <h3>إصلاح الأعطال</h3>
+                        <h3>تصليح المكيفات</h3>
                         <p>كشف وإصلاح جميع أعطال المكيفات باستخدام أحدث أجهزة الفحص</p>
                         <a href="/services/repair/" class="service-link">
                             اقرأ المزيد <i class="fas fa-arrow-left"></i>
@@ -327,7 +396,7 @@
                 </div>
                 <div class="service-card reveal delay-1">
                     <div class="service-image">
-                        <img src="/images/services/installation.jpg" alt="نقل المكيفات" loading="lazy">
+                        <img src="/images/services/installation.jpg" alt="نقل المكيفات" width="1184" height="864" loading="lazy">
                     </div>
                     <div class="service-content">
                         <h3>نقل المكيفات</h3>
@@ -339,12 +408,37 @@
                 </div>
                 <div class="service-card reveal delay-2">
                     <div class="service-image">
-                        <img src="/images/services/cleaning.jpg" alt="تعبئة الفريون" loading="lazy">
+                        <img src="/images/services/cleaning.jpg" alt="تعبئة الفريون" width="1184" height="864" loading="lazy">
                     </div>
                     <div class="service-content">
-                        <h3>تعبئة الفريون</h3>
-                        <p>تعبئة غاز الفريون بأنواعه باستخدام أجهزة قياس دقيقة</p>
+                        <h3>شحن فريون</h3>
+                        <p>شحن فريون المكيفات بأنواعه R22 وR410 وR32 بعد كشف التسريب وإصلاحه، بأجهزة قياس دقيقة</p>
                         <a href="/services/freon-refill/" class="service-link">
+                            اقرأ المزيد <i class="fas fa-arrow-left"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-image">
+                        <img src="/images/services/installation.jpg" alt="فك وتركيب مكيفات بالرياض" width="1184" height="864" loading="lazy">
+                        <span class="service-badge">مطلوب جدًا</span>
+                    </div>
+                    <div class="service-content">
+                        <h3>فك وتركيب مكيفات</h3>
+                        <p>فك المكيف وتركيبه في موقع جديد مع تفريغ الفريون وحفظه، وتمديد النحاس عند الحاجة، واختبار التسريب</p>
+                        <a href="/services/install-and-dismantle/" class="service-link">
+                            اقرأ المزيد <i class="fas fa-arrow-left"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="service-card reveal delay-1">
+                    <div class="service-image">
+                        <img src="/images/services/cleaning.jpg" alt="غسيل مكيفات بالرياض" width="1184" height="864" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3>غسيل المكيفات</h3>
+                        <p>غسيل الوحدة الداخلية والخارجية بالماء والمواد المناسبة لإزالة غبار الرياض وتحسين التبريد</p>
+                        <a href="/services/washing/" class="service-link">
                             اقرأ المزيد <i class="fas fa-arrow-left"></i>
                         </a>
                     </div>
@@ -358,16 +452,77 @@
         </div>
     </section>
 
+    <!-- دليل خدمات المكيفات -->
+    <section class="section guide-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <i class="fas fa-book-open"></i>
+                    دليل الخدمات
+                </div>
+                <h2 class="section-title">دليلك الشامل لخدمات <span>المكيفات في الرياض</span></h2>
+            </div>
+            <div class="guide-intro">
+                <p>أسطول الخبراء <strong>شركة مكيفات بالرياض</strong> تقدم كل ما يحتاجه مكيفك تحت سقف واحد، من التركيب الأول حتى الصيانة الدورية وإصلاح الأعطال الطارئة. بدل أن تبحث عن فني لكل مشكلة، تجد هنا كل خدمات المكيفات بأنواعها، سبليت وشباك ومركزي ودكت وكاسيت ودولابي، ولجميع الماركات.</p>
+                <p>اختر الخدمة التي تحتاجها لمعرفة تفاصيلها وخطوات العمل والأسعار التقريبية والأسئلة الشائعة عنها:</p>
+            </div>
+            <div class="guide-grid">
+                <div class="guide-card">
+                    <h3><i class="fas fa-wrench"></i> الصيانة والإصلاح</h3>
+                    <ul>
+                        <li><a href="/services/maintenance/"><i class="fas fa-chevron-left"></i> صيانة مكيفات بالرياض</a></li>
+                        <li><a href="/services/repair/"><i class="fas fa-chevron-left"></i> تصليح أعطال المكيفات</a></li>
+                        <li><a href="/services/periodic-maintenance/"><i class="fas fa-chevron-left"></i> عقود الصيانة الدورية</a></li>
+                        <li><a href="/services/split-maintenance/"><i class="fas fa-chevron-left"></i> صيانة مكيفات سبليت</a></li>
+                        <li><a href="/services/central-maintenance/"><i class="fas fa-chevron-left"></i> صيانة مكيفات مركزية</a></li>
+                        <li><a href="/services/duct-maintenance/"><i class="fas fa-chevron-left"></i> صيانة مكيفات دكت</a></li>
+                        <li><a href="/services/cassette-maintenance/"><i class="fas fa-chevron-left"></i> صيانة مكيفات كاسيت</a></li>
+                    </ul>
+                </div>
+                <div class="guide-card">
+                    <h3><i class="fas fa-tools"></i> التركيب والفك والنقل</h3>
+                    <ul>
+                        <li><a href="/services/installation/"><i class="fas fa-chevron-left"></i> تركيب مكيفات</a></li>
+                        <li><a href="/services/install-and-dismantle/"><i class="fas fa-chevron-left"></i> فك وتركيب مكيفات</a></li>
+                        <li><a href="/services/dismantling/"><i class="fas fa-chevron-left"></i> فك المكيفات</a></li>
+                        <li><a href="/services/relocation/"><i class="fas fa-chevron-left"></i> نقل المكيفات</a></li>
+                        <li><a href="/services/copper-pipe-extension/"><i class="fas fa-chevron-left"></i> تمديد مواسير النحاس</a></li>
+                        <li><a href="/services/bracket-installation/"><i class="fas fa-chevron-left"></i> تركيب قواعد المكيفات</a></li>
+                    </ul>
+                </div>
+                <div class="guide-card">
+                    <h3><i class="fas fa-broom"></i> الغسيل والتنظيف</h3>
+                    <ul>
+                        <li><a href="/services/washing/"><i class="fas fa-chevron-left"></i> غسيل مكيفات</a></li>
+                        <li><a href="/services/cleaning/"><i class="fas fa-chevron-left"></i> تنظيف وتعقيم المكيفات</a></li>
+                        <li><a href="/services/indoor-unit-cleaning/"><i class="fas fa-chevron-left"></i> تنظيف الوحدة الداخلية</a></li>
+                        <li><a href="/services/outdoor-unit-cleaning/"><i class="fas fa-chevron-left"></i> تنظيف الوحدة الخارجية</a></li>
+                    </ul>
+                </div>
+                <div class="guide-card">
+                    <h3><i class="fas fa-snowflake"></i> الفريون والتبريد</h3>
+                    <ul>
+                        <li><a href="/services/freon-refill/"><i class="fas fa-chevron-left"></i> شحن فريون مكيفات</a></li>
+                        <li><a href="/blog/common-ac-problems/"><i class="fas fa-chevron-left"></i> أشهر مشاكل المكيفات وحلولها</a></li>
+                        <li><a href="/blog/ac-damage-signs/"><i class="fas fa-chevron-left"></i> علامات تلف المكيف</a></li>
+                        <li><a href="/blog/choose-ac-guide/"><i class="fas fa-chevron-left"></i> كيف تختار المكيف المناسب</a></li>
+                        <li><a href="/blog/save-energy-tips/"><i class="fas fa-chevron-left"></i> تقليل استهلاك كهرباء المكيف</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- قسم عن الشركة -->
     <section class="section about-section">
         <div class="container">
             <div class="about-grid">
                 <div class="about-images reveal-right">
                     <div class="about-image-main">
-                        <img src="/images/services/maintenance.jpg" alt="فني صيانة مكيفات محترف" loading="lazy">
+                        <img src="/images/services/maintenance.jpg" alt="فني صيانة مكيفات محترف" width="1184" height="864" loading="lazy">
                     </div>
                     <div class="about-image-float">
-                        <img src="/images/services/installation.jpg" alt="تركيب مكيفات" loading="lazy">
+                        <img src="/images/services/installation.jpg" alt="تركيب مكيفات" width="1184" height="864" loading="lazy">
                     </div>
                     <div class="about-badge">
                         <span class="about-badge-number">+10</span>
@@ -379,7 +534,7 @@
                         <i class="fas fa-info-circle"></i>
                         من نحن
                     </div>
-                    <h2>أفضل شركة <span>خدمات تكييف</span> في الرياض</h2>
+                    <h2>أفضل شركة <span>مكيفات بالرياض</span></h2>
                     <p>
                         أسطول الخبراء لخدمات التكييف هي شركة رائدة في مجال خدمات التكييف في الرياض. نمتلك فريقاً من الفنيين والمهندسين المتخصصين ذوي الخبرة العالية في تركيب وصيانة وإصلاح جميع أنواع المكيفات.
                     </p>
@@ -472,6 +627,67 @@
         </div>
     </section>
 
+
+    <!-- مناطق الخدمة -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <i class="fas fa-map-marked-alt"></i>
+                    مناطق الخدمة
+                </div>
+                <h2 class="section-title">نخدم <span>جميع أحياء الرياض</span></h2>
+                <p class="section-description">فرقنا موزعة على مناطق الرياض لتصلك بأسرع وقت ممكن</p>
+            </div>
+            <div class="areas-grid">
+                <div class="area-card">
+                    <h3>شمال الرياض</h3>
+                    <p>الملقا، النرجس، الياسمين، الصحافة، العارض، حطين، القيروان، الربيع، الندى، الغدير</p>
+                </div>
+                <div class="area-card">
+                    <h3>شرق الرياض</h3>
+                    <p>الروضة، الريان، النسيم، الخليج، القدس، الحمراء، اليرموك، المونسية، قرطبة، الرمال</p>
+                </div>
+                <div class="area-card">
+                    <h3>غرب الرياض</h3>
+                    <p>السويدي، ظهرة لبن، العريجاء، طويق، نمار، البديعة</p>
+                </div>
+                <div class="area-card">
+                    <h3>جنوب الرياض</h3>
+                    <p>الشفا، العزيزية، الدار البيضاء، بدر، المروة، الحزم، عكاظ</p>
+                </div>
+                <div class="area-card">
+                    <h3>وسط الرياض</h3>
+                    <p>العليا، الملز، المربع، السليمانية، الورود، المروج، الوزارات</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- كيف تختار شركة مكيفات -->
+    <section class="section guide-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <i class="fas fa-clipboard-check"></i>
+                    قبل أن تتصل بأي فني
+                </div>
+                <h2 class="section-title">كيف تختار <span>أفضل شركة مكيفات بالرياض</span>؟</h2>
+            </div>
+            <div class="choose-content">
+                <p>كثير من أصحاب البيوت في الرياض دفعوا ثمن فني غير متخصص: فريون يُشحن بدون إصلاح التسريب، أو قطعة تُغير بدون حاجة، أو تركيب يسرب الماء بعد أسبوع. هذه أهم النقاط التي تفرق الشركة المحترفة عن غيرها:</p>
+                <ol class="choose-list">
+                    <li><strong>التشخيص قبل التسعير:</strong> الفني المحترف يكشف ويقيس الضغط والتيار، ثم يخبرك بالمشكلة وسعر إصلاحها قبل أن يبدأ.</li>
+                    <li><strong>ضمان مكتوب:</strong> اسأل عن مدة الضمان على الشغل وعلى قطع الغيار، وعلى ماذا يشمل بالضبط.</li>
+                    <li><strong>أدوات قياس حقيقية:</strong> ساعات فريون وجهاز قياس أمبير وجهاز كشف تسريب، وليس "التخمين".</li>
+                    <li><strong>خبرة بكل الأنواع:</strong> المكيف المركزي والدكت يختلفان تمامًا عن السبليت والشباك.</li>
+                    <li><strong>تقييمات حقيقية:</strong> راجع تقييمات الشركة على خرائط جوجل وآراء العملاء قبل الحجز.</li>
+                    <li><strong>سرعة الاستجابة:</strong> في صيف الرياض لا يحتمل البيت يومًا كاملًا بدون مكيف.</li>
+                </ol>
+                <p>هذه المعايير هي نفسها التي نطبقها في أسطول الخبراء في كل زيارة. <a href="/contact/">تواصل معنا</a> واطلب الخدمة التي تحتاجها.</p>
+            </div>
+        </div>
+    </section>
 
     <!-- قسم الإحصائيات -->
     <section class="stats-section">
@@ -588,7 +804,7 @@
             <div class="blog-grid">
                 <article class="blog-card reveal">
                     <div class="blog-image">
-                        <img src="/images/services/cleaning.jpg" alt="أهمية تنظيف المكيفات" loading="lazy">
+                        <img src="/images/services/cleaning.jpg" alt="أهمية تنظيف المكيفات" width="1184" height="864" loading="lazy">
                         <span class="blog-category-tag">نصائح</span>
                     </div>
                     <div class="blog-content">
@@ -605,7 +821,7 @@
                 </article>
                 <article class="blog-card reveal delay-1">
                     <div class="blog-image">
-                        <img src="/images/services/maintenance.jpg" alt="مؤشرات تلف المكيف" loading="lazy">
+                        <img src="/images/services/maintenance.jpg" alt="مؤشرات تلف المكيف" width="1184" height="864" loading="lazy">
                         <span class="blog-category-tag">إرشادات</span>
                     </div>
                     <div class="blog-content">
@@ -622,7 +838,7 @@
                 </article>
                 <article class="blog-card reveal delay-2">
                     <div class="blog-image">
-                        <img src="/images/services/installation.jpg" alt="كيفية اختيار المكيف" loading="lazy">
+                        <img src="/images/services/installation.jpg" alt="كيفية اختيار المكيف" width="1184" height="864" loading="lazy">
                         <span class="blog-category-tag">دليل</span>
                     </div>
                     <div class="blog-content">
@@ -642,6 +858,94 @@
                 <a href="/blog/" class="btn btn-outline">
                     <i class="fas fa-newspaper"></i> جميع المقالات
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- الأسئلة الشائعة -->
+    <section class="section home-faq">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <i class="fas fa-question-circle"></i>
+                    الأسئلة الشائعة
+                </div>
+                <h2 class="section-title">أسئلة شائعة عن <span>شركة المكيفات</span></h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item-page">
+                    <div class="faq-question-page">
+                        <div class="q-icon">س</div>
+                        <span class="q-text">ما هي أفضل شركة مكيفات بالرياض؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer-page">
+                        <p>أفضل شركة هي التي تشخص المشكلة بدقة قبل الإصلاح، وتعطيك سعرًا واضحًا قبل البدء، وتقدم ضمانًا مكتوبًا. في أسطول الخبراء نطبق هذه المعايير في كل زيارة، ونخدم جميع أحياء الرياض على مدار 24 ساعة.</p>
+                    </div>
+                </div>
+                <div class="faq-item-page">
+                    <div class="faq-question-page">
+                        <div class="q-icon">س</div>
+                        <span class="q-text">ما الخدمات التي تقدمونها للمكيفات؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer-page">
+                        <p>نقدم صيانة المكيفات، وتصليح الأعطال، وتركيب المكيفات، وفك وتركيب ونقل المكيفات، وغسيل وتنظيف وتعقيم المكيفات، وشحن الفريون، وتمديد مواسير النحاس، وتركيب القواعد، وعقود الصيانة الدورية، لجميع الأنواع والماركات.</p>
+                    </div>
+                </div>
+                <div class="faq-item-page">
+                    <div class="faq-question-page">
+                        <div class="q-icon">س</div>
+                        <span class="q-text">هل تصلحون جميع أنواع المكيفات؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer-page">
+                        <p>نعم، نتعامل مع المكيفات السبليت والشباك والمركزي والدكت (الكونسيلد) والكاسيت والدولابي، ومع جميع الماركات مثل زامل وجري وإل جي وسامسونج وميديا وكاريير وغيرها.</p>
+                    </div>
+                </div>
+                <div class="faq-item-page">
+                    <div class="faq-question-page">
+                        <div class="q-icon">س</div>
+                        <span class="q-text">كم سعر صيانة المكيف في الرياض؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer-page">
+                        <p>الصيانة الشاملة مع الغسيل للمكيف السبليت تبدأ من 150 ريال، والسعر النهائي يحدده الفني بعد الكشف ويتم الاتفاق عليه قبل بدء العمل. يوجد خصم عند صيانة أكثر من مكيف.</p>
+                    </div>
+                </div>
+                <div class="faq-item-page">
+                    <div class="faq-question-page">
+                        <div class="q-icon">س</div>
+                        <span class="q-text">هل الخدمة متاحة 24 ساعة؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer-page">
+                        <p>نعم، نستقبل الطلبات والأعطال الطارئة على مدار 24 ساعة طوال أيام الأسبوع عبر الاتصال أو واتساب على الرقم 0547559437.</p>
+                    </div>
+                </div>
+                <div class="faq-item-page">
+                    <div class="faq-question-page">
+                        <div class="q-icon">س</div>
+                        <span class="q-text">هل تقدمون ضمانًا على الشغل؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer-page">
+                        <p>نعم، نقدم ضمانًا مكتوبًا على أعمال الصيانة والتركيب وقطع الغيار، وتختلف مدته حسب نوع الخدمة ويتم توضيحها قبل التنفيذ.</p>
+                    </div>
+                </div>
+                <div class="faq-item-page">
+                    <div class="faq-question-page">
+                        <div class="q-icon">س</div>
+                        <span class="q-text">ما المناطق التي تغطونها في الرياض؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer-page">
+                        <p>نغطي جميع أحياء الرياض في الشمال والشرق والغرب والجنوب والوسط، مثل الملقا والنرجس والياسمين والروضة والنسيم والسويدي والشفا والعليا والملز وغيرها.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-40">
+                <a href="/faq/" class="btn btn-outline"><i class="fas fa-question"></i> كل الأسئلة الشائعة</a>
             </div>
         </div>
     </section>
@@ -691,11 +995,12 @@
             <div class="footer-column">
                 <h3>خدماتنا</h3>
                 <ul class="footer-links">
-                    <li><a href="/services/installation/"><i class="fas fa-chevron-left"></i> تركيب المكيفات</a></li>
-                    <li><a href="/services/maintenance/"><i class="fas fa-chevron-left"></i> صيانة المكيفات</a></li>
-                    <li><a href="/services/cleaning/"><i class="fas fa-chevron-left"></i> تنظيف المكيفات</a></li>
-                    <li><a href="/services/repair/"><i class="fas fa-chevron-left"></i> إصلاح الأعطال</a></li>
-                    <li><a href="/services/freon-refill/"><i class="fas fa-chevron-left"></i> تعبئة الفريون</a></li>
+                    <li><a href="/services/maintenance/"><i class="fas fa-chevron-left"></i> صيانة مكيفات بالرياض</a></li>
+                    <li><a href="/services/install-and-dismantle/"><i class="fas fa-chevron-left"></i> فك وتركيب مكيفات</a></li>
+                    <li><a href="/services/washing/"><i class="fas fa-chevron-left"></i> غسيل مكيفات</a></li>
+                    <li><a href="/services/freon-refill/"><i class="fas fa-chevron-left"></i> شحن فريون</a></li>
+                    <li><a href="/services/repair/"><i class="fas fa-chevron-left"></i> تصليح المكيفات</a></li>
+                    <li><a href="/services/installation/"><i class="fas fa-chevron-left"></i> تركيب مكيفات</a></li>
                 </ul>
             </div>
 
@@ -751,6 +1056,7 @@
 <script src="/js/slider.js"></script>
 <script src="/js/lazyload.js"></script>
 <script src="/js/whatsapp.js"></script>
+<script src="/js/faq.js"></script>
 
 </body>
 </html>
